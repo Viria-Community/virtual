@@ -1,0 +1,100 @@
+{
+    "programmation": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "PHP",
+        "C",
+        "C++",
+        "C#",
+        "Go",
+        "Rust",
+        "Ruby",
+        "Kotlin",
+        "Swift"
+    ],
+    "web": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Responsive Design",
+        "Web Design",
+        "Frontend Development",
+        "Backend Development",
+        "API REST"
+    ],
+    "bases_de_donnees": [
+        "SQL",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "SQLite",
+        "Modélisation de bases de données"
+    ],
+    "conception_et_modelisation": [
+        "UML",
+        "Merise",
+        "Diagramme de classes",
+        "Diagramme de cas d'utilisation",
+        "Cahier des charges",
+        "Analyse des besoins",
+        "Conception logicielle"
+    ],
+    "outils_et_developpement": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Jupyter Notebook",
+        "VS Code",
+        "Linux",
+        "Terminal",
+        "Postman"
+    ],
+    "reseaux_et_cybersecurite": [
+        "TCP/IP",
+        "Cisco",
+        "SSH",
+        "Nmap",
+        "Wireshark",
+        "VPN",
+        "Cybersécurité",
+        "Administration réseau"
+    ],
+    "cloud_et_devops": [
+        "AWS",
+        "Microsoft Azure",
+        "Google Cloud",
+        "Terraform",
+        "CI/CD",
+        "Kubernetes"
+    ],
+    "data_et_ia": [
+        "Data Science",
+        "Analyse de données",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Machine Learning",
+        "Intelligence artificielle"
+    ],
+    "documentation_et_redaction": [
+        "Rédaction technique",
+        "Documentation technique",
+        "Rédaction de rapports",
+        "Rédaction de cahiers des charges",
+        "Documentation de projets"
+    ],
+    "langues": [
+        "Français",
+        "Anglais",
+        "Espagnol",
+        "Allemand"
+    ],
+    "autres": [
+        "Présentation orale",
+        "Recherche documentaire",
+        "Gestion de projet",
+        "Gestion du temps",
+        "Travail en équipe"
+    ]
+}

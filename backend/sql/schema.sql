@@ -9,8 +9,6 @@
     domaine_competence VARCHAR(150),
     domaine_interet VARCHAR(150),
     lien_git VARCHAR(150),
-    ville VARCHAR(50),
-    pays VARCHAR(50),
     email VARCHAR(150) UNIQUE NOT NULL,
     mot_de_passe VARCHAR(150)NOT NULL
    
@@ -48,6 +46,10 @@ CREATE TABLE membre(
    FOREIGN KEY(id_user) REFERENCES utilisateur(id_user),
    FOREIGN KEY(id_classe) REFERENCES Classe(id_classe)
     );
+
+ --creation table localisation
+ 
+
     
 
 

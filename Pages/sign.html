@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s'identifier</title>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+
+
+
+        <section id="signin">
+            <h2>sign in</h2>
+            <label for="last name">Last name</label>
+            <input type="text" name="last name" id="last name" name="last name" required>
+
+            <label for="first name">First name</label>
+            <input type="text" name="first name" id="first name" name="first name" required>
+
+            <label for="date of birth">Date of birth</label>
+            <input type="date" name="date of birth" id="date of birth" name="date of birth">
+
+            <label for="username">Username</label>
+            <input type="text" name="username" id="lusername" name="username">
+
+
+        </section>
+
+        <section id="account">
+            <h2>Account</h2>
+            <label for="email address"> Email address</label>
+            <input type="email" name="email address" id="email address" required>
+
+            <label for="password"> Password</label>
+            <input type="password" name="password" id="password" required>
+
+            <label for="confirm password">Confirm Password</label>
+            <input type="password" name="confirm password" id="confirm password" required>
+
+
+        </section>
+
+        <section id="profile">
+            <h2>Profile</h2>
+
+            <label>
+                <input type="radio" name="avatar" value="feminin">
+                <img src="../Virtual_docs/Assets/icons/user-woman.png" alt="avatar-feminin">
+
+            </label>
+
+            <label>
+                <input type="radio" name="avatar" value="masculin">
+                <img src="../Virtual_docs/Assets/icons/user-man.png" alt="avatar-masculin">
+
+            </label>
+
+            <label>
+                <input type="radio" name="avatar" value="photo">
+                importer une photo depuis vos dossiers
+            </label>
+            <input type="file" name="photo" accept="image/*">
+        </section>
+
+        <section id="education">
+
+            <div class="field">
+                <label for="school">School name</label>
+                <input type="text" name="school" id="school" placeholder="search for your school" autocomplete="off">
+
+                <div id="schoolsuggestion" class="suggestion"></div>
+
+            </div>
+
+
+
+            <div class="field">
+
+                <label for="education_level"> Education Level</label>
+                <select name="education_level" id="education_level">
+                    <option value="">Select your level</option>
+                    <option value="secondary">Secondary School</option>
+                    <option value="high">High School</option>
+                    <option value="bachelor"></option>
+                    <option value="masters"></option>
+                    <option value="licences"></option>
+                    <option value="others"></option>
+
+            </div>
+            </select>
+
+            <div class="field">
+
+                <label for="field-of-study">Field of study</label>
+                <input type="text" name="field-of-study" id="field-of-study"
+                    placeholder="search for your field-of-study" autocomplete="off">
+
+                <div id="fieldsuggestion" class="suggestion"></div>
+
+            </div>
+
+        </section>
+
+
+        <section id="competences">
+            <h2>Technical Skills</h2>
+
+            <div class="competences-principales">
+
+                <div class="competence">
+                    <input type="checkbox" id="python" name="competences" value="Python">
+                    <label for="python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            alt="Python">
+                        <span>Python</span>
+                    </label>
+                </div>
+
+                <div class="competence">
+                    <input type="checkbox" id="java" name="competences" value="Java">
+                    <label for="java">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                            alt="Java">
+                        <span>Java</span>
+                    </label>
+                </div>
+
+                <div class="competence">
+                    <input type="checkbox" id="javascript" name="competences" value="JavaScript">
+                    <label for="javascript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                            alt="JavaScript">
+                        <span>JavaScript</span>
+                    </label>
+                </div>
+
+                <div class="competence">
+                    <input type="checkbox" id="php" name="competences" value="PHP">
+                    <label for="php">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                            alt="PHP">
+                        <span>PHP</span>
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="autres-competences">
+                <h3>Other Skills</h3>
+
+                <div class="liste-competences">
+
+                    <div class="competence">
+                        <input type="checkbox" id="angular" name="competences" value="Angular">
+                        <label for="angular">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original-wordmark.svg"
+                                alt="Angular">
+                            <span>Angular</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="ansible" name="competences" value="Ansible">
+                        <label for="ansible">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original-wordmark.svg"
+                                alt="Ansible">
+                            <span>Ansible</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="arduino" name="competences" value="Arduino">
+                        <label for="arduino">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-plain-wordmark.svg"
+                                alt="Arduino">
+                            <span>Arduino</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="aws" name="competences" value="AWS">
+                        <label for="aws">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                                alt="AWS">
+                            <span>AWS</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="azure" name="competences" value="Azure">
+                        <label for="azure">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-plain-wordmark.svg"
+                                alt="Azure">
+                            <span>Azure</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="bash" name="competences" value="Bash">
+                        <label for="bash">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg"
+                                alt="Bash">
+                            <span>Bash</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="blender" name="competences" value="Blender">
+                        <label for="blender">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original-wordmark.svg"
+                                alt="Blender">
+                            <span>Blender</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="c" name="competences" value="C">
+                        <label for="c">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                                alt="C">
+                            <span>C</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="cpp" name="competences" value="C++">
+                        <label for="cpp">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                                alt="C++">
+                            <span>C++</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="csharp" name="competences" value="C#">
+                        <label for="csharp">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                                alt="C#">
+                            <span>C#</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="css" name="competences" value="CSS">
+                        <label for="css">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+                                alt="CSS">
+                            <span>CSS</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="dart" name="competences" value="Dart">
+                        <label for="dart">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-plain-wordmark.svg"
+                                alt="Dart">
+                            <span>Dart</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="django" name="competences" value="Django">
+                        <label for="django">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg"
+                                alt="Django">
+                            <span>Django</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="docker" name="competences" value="Docker">
+                        <label for="docker">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg"
+                                alt="Docker">
+                            <span>Docker</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="flask" name="competences" value="Flask">
+                        <label for="flask">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg"
+                                alt="Flask">
+                            <span>Flask</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="flutter" name="competences" value="Flutter">
+                        <label for="flutter">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+                                alt="Flutter">
+                            <span>Flutter</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="git" name="competences" value="Git">
+                        <label for="git">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"
+                                alt="Git">
+                            <span>Git</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="github" name="competences" value="GitHub">
+                        <label for="github">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                                alt="GitHub">
+                            <span>GitHub</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="go" name="competences" value="Go">
+                        <label for="go">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+                                alt="Go">
+                            <span>Go</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="googlecloud" name="competences" value="Google Cloud">
+                        <label for="googlecloud">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+                                alt="Google Cloud">
+                            <span>Google Cloud</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="html" name="competences" value="HTML">
+                        <label for="html">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                alt="HTML">
+                            <span>HTML</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="jupyter" name="competences" value="Jupyter">
+                        <label for="jupyter">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg"
+                                alt="Jupyter">
+                            <span>Jupyter</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="kotlin" name="competences" value="Kotlin">
+                        <label for="kotlin">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+                                alt="Kotlin">
+                            <span>Kotlin</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="kubernetes" name="competences" value="Kubernetes">
+                        <label for="kubernetes">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"
+                                alt="Kubernetes">
+                            <span>Kubernetes</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="laravel" name="competences" value="Laravel">
+                        <label for="laravel">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original-wordmark.svg"
+                                alt="Laravel">
+                            <span>Laravel</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="linux" name="competences" value="Linux">
+                        <label for="linux">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                                alt="Linux">
+                            <span>Linux</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="matplotlib" name="competences" value="Matplotlib">
+                        <label for="matplotlib">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+                                alt="Matplotlib">
+                            <span>Matplotlib</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="mongodb" name="competences" value="MongoDB">
+                        <label for="mongodb">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg"
+                                alt="MongoDB">
+                            <span>MongoDB</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="mysql" name="competences" value="MySQL">
+                        <label for="mysql">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg"
+                                alt="MySQL">
+                            <span>MySQL</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="nodejs" name="competences" value="Node.js">
+                        <label for="nodejs">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                                alt="Node.js">
+                            <span>Node.js</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="numpy" name="competences" value="NumPy">
+                        <label for="numpy">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-plain-wordmark.svg"
+                                alt="NumPy">
+                            <span>NumPy</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="oracle" name="competences" value="Oracle">
+                        <label for="oracle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
+                                alt="Oracle">
+                            <span>Oracle</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="pandas" name="competences" value="Pandas">
+                        <label for="pandas">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg"
+                                alt="Pandas">
+                            <span>Pandas</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="postgresql" name="competences" value="PostgreSQL">
+                        <label for="postgresql">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="pulumi" name="competences" value="Pulumi">
+                        <label for="pulumi">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pulumi/pulumi-original-wordmark.svg"
+                                alt="Pulumi">
+                            <span>Pulumi</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="pytorch" name="competences" value="PyTorch">
+                        <label for="pytorch">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+                                alt="PyTorch">
+                            <span>PyTorch</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="r" name="competences" value="R">
+                        <label for="r">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg"
+                                alt="R">
+                            <span>R</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="raspberrypi" name="competences" value="Raspberry Pi">
+                        <label for="raspberrypi">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg"
+                                alt="Raspberry Pi">
+                            <span>Raspberry Pi</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="react" name="competences" value="React">
+                        <label for="react">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                                alt="React">
+                            <span>React</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="redis" name="competences" value="Redis">
+                        <label for="redis">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
+                                alt="Redis">
+                            <span>Redis</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="ruby" name="competences" value="Ruby">
+                        <label for="ruby">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg"
+                                alt="Ruby">
+                            <span>Ruby</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="rust" name="competences" value="Rust">
+                        <label for="rust">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+                                alt="Rust">
+                            <span>Rust</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="sqlite" name="competences" value="SQLite">
+                        <label for="sqlite">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
+                                alt="SQLite">
+                            <span>SQLite</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="springboot" name="competences" value="Spring Boot">
+                        <label for="springboot">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                                alt="Spring Boot">
+                            <span>Spring Boot</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="ssh" name="competences" value="SSH">
+                        <label for="ssh">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ssh/ssh-original-wordmark.svg"
+                                alt="SSH">
+                            <span>SSH</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="swift" name="competences" value="Swift">
+                        <label for="swift">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg"
+                                alt="Swift">
+                            <span>Swift</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="tailwindcss" name="competences" value="Tailwind CSS">
+                        <label for="tailwindcss">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                                alt="Tailwind CSS">
+                            <span>Tailwind CSS</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="tensorflow" name="competences" value="TensorFlow">
+                        <label for="tensorflow">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+                                alt="TensorFlow">
+                            <span>TensorFlow</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="terraform" name="competences" value="Terraform">
+                        <label for="terraform">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg"
+                                alt="Terraform">
+                            <span>Terraform</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="typescript" name="competences" value="TypeScript">
+                        <label for="typescript">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                                alt="TypeScript">
+                            <span>TypeScript</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="unity" name="competences" value="Unity">
+                        <label for="unity">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original-wordmark.svg"
+                                alt="Unity">
+                            <span>Unity</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="unreal" name="competences" value="Unreal Engine">
+                        <label for="unreal">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original-wordmark.svg"
+                                alt="Unreal Engine">
+                            <span>Unreal Engine</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="vue" name="competences" value="Vue.js">
+                        <label for="vue">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+                                alt="Vue.js">
+                            <span>Vue.js</span>
+                        </label>
+                    </div>
+                    <div class="competence">
+                        <input type="checkbox" id="cisco" name="competences" value="Cisco">
+                        <label for="cisco">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cisco.svg"
+                                alt="Cisco">
+                            <span>Cisco</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="esp32" name="competences" value="ESP32">
+                        <label for="esp32">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/espressif.svg"
+                                alt="ESP32">
+                            <span>ESP32</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="micropython" name="competences" value="MicroPython">
+                        <label for="micropython">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/micropython.svg"
+                                alt="MicroPython">
+                            <span>MicroPython</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="nmap" name="competences" value="Nmap">
+                        <label for="nmap">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nmap.svg" alt="Nmap">
+                            <span>Nmap</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="roblox" name="competences" value="Roblox Studio">
+                        <label for="roblox">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/robloxstudio.svg"
+                                alt="Roblox Studio">
+                            <span>Roblox Studio</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="tcpip" name="competences" value="TCP/IP">
+                        <label for="tcpip">
+                            <span>TCP/IP</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="vpn" name="competences" value="VPN">
+                        <label for="vpn">
+                            <span>VPN</span>
+                        </label>
+                    </div>
+
+                    <div class="competence">
+                        <input type="checkbox" id="wireshark" name="competences" value="Wireshark">
+                        <label for="wireshark">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wireshark.svg"
+                                alt="Wireshark">
+                            <span>Wireshark</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences-acquises">
+            <h2>Existing Skills</h2>
+
+            <div class="field">
+                <label for="existingSkill">Your skills</label>
+
+                <input type="text" id="existingSkill" name="existingSkill" placeholder="Search or enter a skill"
+                    autocomplete="off">
+
+                <div id="existingSkillSuggestions" class="suggestions"></div>
+            </div>
+
+            <div id="selectedSkills" class="selected-skills"></div>
+        </section>
+
+        <section id="objectifs">
+            <h2>Objectives</h2>
+
+            <div class="objectifs-liste">
+
+                <div class="objectif">
+                    <input type="checkbox" id="learn" name="objectifs" value="Learn new technologies">
+                    <label for="learn">Learn new technologies</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="improve" name="objectifs" value="Improve my technical skills">
+                    <label for="improve">Improve my technical skills</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="projects" name="objectifs" value="Work on projects">
+                    <label for="projects">Work on projects</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="internship" name="objectifs" value="Find an internship">
+                    <label for="internship">Find an internship</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="job" name="objectifs" value="Find a job">
+                    <label for="job">Find a job</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="portfolio" name="objectifs" value="Build my portfolio">
+                    <label for="portfolio">Build my portfolio</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="collaboration" name="objectifs" value="Collaborate with other students">
+                    <label for="collaboration">Collaborate with other students</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="teamwork" name="objectifs" value="Learn to work in a team">
+                    <label for="teamwork">Learn to work in a team</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="certifications" name="objectifs" value="Prepare for certifications">
+                    <label for="certifications">Prepare for certifications</label>
+                </div>
+
+                <div class="objectif">
+                    <input type="checkbox" id="personal-project" name="objectifs" value="Create a personal project">
+                    <label for="personal-project">Create a personal project</label>
+                </div>
+
+            </div>
+
+            <div class="field">
+                <label for="custom_objective">Other objective</label>
+                <textarea id="custom_objective" name="custom_objective" placeholder="Write your own objective..."
+                    rows="4">
+        </textarea>
+            </div>
+        </section>
+
+
+        <section id="localisation">
+            <h2>Location</h2>
+
+            <div class="field">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country" required>
+            </div>
+
+            <div class="field">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            </div>
+
+            <div class="field">
+                <label for="neighborhood">Neighborhood</label>
+                <input type="text" id="neighborhood" name="neighborhood" placeholder="Enter your neighborhood" required>
+            </div>
+        </section>
+
+        <section id="a-propos">
+            <h2>About You</h2>
+
+            <div class="field">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" placeholder="Tell us a little about yourself..." rows="5"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="interests">Interests</label>
+                <textarea id="interests" name="interests" placeholder="Tell us about your interests..."
+                    rows="4"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="github">GitHub</label>
+                <input type="url" id="github" name="github" placeholder="https://github.com/username">
+            </div>
+
+            <div class="field">
+                <label for="portfolio">Portfolio</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://your-portfolio.com">
+            </div>
+        </section>
+
+        <section id="validation">
+            <h2>Validation</h2>
+
+            <div class="agreement">
+                <input type="checkbox" id="terms" name="terms" required>
+
+                <label for="terms">
+                    I agree to the Terms and Conditions and confirm that
+                    the information I have provided is accurate.
+                </label>
+            </div>
+
+            <button type="submit">
+                Create my profile
+            </button>
+
+        </section>
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
